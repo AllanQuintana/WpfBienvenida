@@ -20,9 +20,31 @@ namespace WpfBienvenida
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        //Declaración variable global
+        string nomnbre;
+        private void btmSalir_Click(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
+            //Cierra la aplicación
+            this.Close();
+        }
+
+        private void btmLimpiar_Click(object sender, RoutedEventArgs e)
+        {
+            //Permite salir los controles
+            this.txtNombre.Text = string.Empty;
+            this.lblMensaje.Content = string.Empty;
+        }
+
+        private void btmMostrar_Click(object sender, RoutedEventArgs e)
+        {
+            //Variable local
+            string mensaje;
+            //Recuparar el valor del textbox
+            nomnbre = this.txtNombre.Text;
+            //Formar el mensaje
+            mensaje = "Bienvenid@ al curso  " + nomnbre;
+            //Mostrar el mensaje
+            this.lblMensaje.Content += mensaje;
         }
     }
 }

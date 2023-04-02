@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label HorizontalAlignment="Center" Margin="0,3,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.415,-1.654" Width="795" Height="41" Content="Bienvenida" FontSize="22" HorizontalContentAlignment="Center">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.056"/>
+                    <TranslateTransform X="0.645" Y="-0.428"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="37,91,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="96,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="404"/>
+        <Button x:Name="btmMostrar" Content="Mostrar mensaje" HorizontalAlignment="Left" Margin="96,128,0,0" VerticalAlignment="Top" Width="137" Click="btmMostrar_Click"/>
+        <Button x:Name="btmLimpiar" Content="Limpiar" HorizontalAlignment="Left" Margin="96,202,0,0" VerticalAlignment="Top" Click="btmLimpiar_Click"/>
+        <Button x:Name="btmSalir" Content="Salir" HorizontalAlignment="Left" Margin="151,202,0,0" VerticalAlignment="Top" Click="btmSalir_Click"/>
+        <Label x:Name="lblMensaje" Content="" HorizontalAlignment="Left" Height="44" Margin="96,153,0,0" VerticalAlignment="Top" Width="404" Background="#FFD2D0D0"/>
+        <Label Content="Resultado" HorizontalAlignment="Left" Margin="29,161,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
