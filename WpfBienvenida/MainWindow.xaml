@@ -18,11 +18,11 @@
             </Label.RenderTransform>
         </Label>
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="37,91,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="96,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="404"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="96,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="404" Background="#FF83EC5E"/>
         <Button x:Name="btmMostrar" Content="Mostrar mensaje" HorizontalAlignment="Left" Margin="96,128,0,0" VerticalAlignment="Top" Width="137" Click="btmMostrar_Click"/>
         <Button x:Name="btmLimpiar" Content="Limpiar" HorizontalAlignment="Left" Margin="96,202,0,0" VerticalAlignment="Top" Click="btmLimpiar_Click"/>
         <Button x:Name="btmSalir" Content="Salir" HorizontalAlignment="Left" Margin="151,202,0,0" VerticalAlignment="Top" Click="btmSalir_Click"/>
-        <Label x:Name="lblMensaje" Content="" HorizontalAlignment="Left" Height="44" Margin="96,153,0,0" VerticalAlignment="Top" Width="404" Background="#FFD2D0D0"/>
+        <Label x:Name="lblMensaje" Content="" HorizontalAlignment="Left" Height="44" Margin="96,153,0,0" VerticalAlignment="Top" Width="404" Background="#FFF11A1A"/>
         <Label Content="Resultado" HorizontalAlignment="Left" Margin="29,161,0,0" VerticalAlignment="Top"/>
 
     </Grid>
